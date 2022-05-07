@@ -1,0 +1,15 @@
+.rhap_container.player {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: 0 0px 0px transparent;
+	-moz-box-shadow: 0 0px 0px transparent;
+	box-shadow: 0 0px 0px transparent;
+}
+
+.rhap_controls-section .rhap_main-controls button[aria-label="Play"] svg path {
+    fill: rgb(0, 255, 0) !important;
+}
+
+.rhap_controls-section .rhap_main-controls button[aria-label="Pause"] svg path {
+    fill: #e36bae !important;
+}
