@@ -22,9 +22,9 @@ const classes = {
 };
 
 export default function KaraokeHolder() {
-  const location = useLocation();
-  const { single } = location.state;
-  console.log(single)
+  // const location = useLocation();
+  // const { single } = location.state;
+  // console.log(single)
   
   return (
     <>
