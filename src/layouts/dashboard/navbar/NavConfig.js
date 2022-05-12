@@ -32,7 +32,7 @@ const navConfig = [
     items: [
       { title: 'app', path: PATH_DASHBOARD.general.app, icon: ICONS.dashboard },
       // { title: 'e-commerce', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
-      // { title: 'E-learning Analytics', path: PATH_DASHBOARD.eLearning.analytics, icon: ICONS.analytics },
+      { title: 'E-learning Analytics', path: PATH_DASHBOARD.eLearning.analytics, icon: ICONS.analytics },
       // { title: 'analytics', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
       // { title: 'banking', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
       // { title: 'booking', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
@@ -68,17 +68,17 @@ const navConfig = [
           // { title: 'list (Admin)', path: PATH_DASHBOARD.eCommerce.list },
           // { title: 'create(Admin)', path: PATH_DASHBOARD.eCommerce.newProduct },
           { title: 'shop (User)', path: PATH_DASHBOARD.eCommerce.shop },
-          { title: 'product', path: PATH_DASHBOARD.eCommerce.productById },
+          // { title: 'product', path: PATH_DASHBOARD.eCommerce.productById },
           { title: 'create(User)', path: PATH_DASHBOARD.eCommerce.usedProduct },
           { title: 'wishlist(User)', path: PATH_DASHBOARD.eCommerce.wishlist },
           // { title: 'edit', path: PATH_DASHBOARD.eCommerce.editById },
           { title: 'checkout(User)', path: PATH_DASHBOARD.eCommerce.checkout },
-          { title: 'invoice(User)', path: PATH_DASHBOARD.eCommerce.invoice },
+          // { title: 'invoice(User)', path: PATH_DASHBOARD.eCommerce.invoice },
         ],
       },
 
 
-      // MANAGEMENT : E-Learnng
+      // MANAGEMENT : E-Learning
       {
         title: 'E-Learning',
         path: PATH_DASHBOARD.eLearning.root,
@@ -111,13 +111,14 @@ const navConfig = [
         {
           title: 'Event & Karaoke',
           path: PATH_DASHBOARD.event.root,
-          icon: ICONS.chat,
+          icon: ICONS.booking,
           children: [
             { title: 'Event', path: PATH_DASHBOARD.calendarUser, icon: ICONS.calendar },
             // { title: 'Karaokes', path: PATH_DASHBOARD.karaoke.posts },
             { title: 'KaraokeHolder', path: PATH_DASHBOARD.karaoke.KaraokeHolder },
           ],
         },
+        { title: 'chat', path: "http://localhost:3033/dashboard/chatbot", icon: ICONS.chat },
     ],
   },
 

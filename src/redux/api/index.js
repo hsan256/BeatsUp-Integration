@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const url = 'https://beatsup-project.herokuapp.com/api';
-const urlMac = 'https://beatsup-project.herokuapp.com';
+const url = 'http://localhost:5000/api';
+const urlMac = 'http://localhost:5000';
 // const SECRET_KEY = 'beatsup ';
 // const token = JSON.parse(localStorage.getItem('profile')).accessToken;
 
@@ -9,7 +9,7 @@ const urlMac = 'https://beatsup-project.herokuapp.com';
 export const login = (formData) => axios.post(`${url}/auth/login`, formData);
 export const register = (formData) => axios.post(`${url}/auth/register`, formData);
 
-const API = axios.create({ baseURL: 'https://beatsup-project.herokuapp.com/api' });
+const API = axios.create({ baseURL: 'http://localhost:5000/api' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {

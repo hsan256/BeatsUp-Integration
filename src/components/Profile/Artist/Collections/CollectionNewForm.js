@@ -36,7 +36,7 @@ import Iconify from '../../../Iconify';
 import storage from '../../../../firebase';
 // import BlogNewPostPreview from './BlogNewPostPreview';
 import { createCollection } from '../../../../redux/actions/collections';
-import { getMusics } from '../../../../redux/actions/musics';
+import { getMusicsById } from '../../../../redux/actions/musics';
 // ----------------------------------------------------------------------
 
 const TAGS_OPTION = [
@@ -71,7 +71,7 @@ export default function CollectionNewForm() {
   const { musics } = useSelector((state) => state.musics);
 
   useEffect(() => {
-    getMusics(dispatch);
+    getMusicsById(dispatch);
   }, [dispatch]);
 
   const [open, setOpen] = useState(false);

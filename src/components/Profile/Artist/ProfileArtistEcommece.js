@@ -69,21 +69,30 @@ export default function ProfileArtistEcommerce() {
   return (
     <Box sx={{ mt: 5 }}>
       <Grid container spacing={5}>
-        <Grid item xs={10}>
+        <Grid item xs={8}>
           <Typography variant="h4" sx={{ mb: 3 }}>
             Products
           </Typography>
         </Grid>
-        {/* <Grid item xs={2}>
+        <Grid item xs={4}>
           <Button
             variant="contained"
             component={RouterLink}
-            to={PATH_DASHBOARD.artist.add_collection}
+            to={PATH_DASHBOARD.eCommerce.newProduct}
             startIcon={<Iconify icon={'eva:plus-fill'} />}
           >
-            New Collection
+            New Product
           </Button>
-        </Grid> */}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <Button
+            variant="contained"
+            component={RouterLink}
+            to={PATH_DASHBOARD.eCommerce.list}
+            startIcon={<Iconify icon={'vscode-icons:file-type-python'} />}
+          >
+            List Products
+          </Button>
+        </Grid>
       </Grid>
 
       <Card sx={{ p: 3 }}>

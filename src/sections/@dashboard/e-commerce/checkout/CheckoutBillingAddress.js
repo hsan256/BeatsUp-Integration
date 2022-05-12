@@ -107,7 +107,7 @@ function AddressItem({ address, onNextStep, onCreateBilling }) {
   return (
     <Card sx={{ p: 3, mb: 3, position: 'relative' }}>
       <Box sx={{ mb: 1, display: 'flex', alignItems: 'center' }}>
-        <Typography variant="subtitle1">Firas Khadraoui</Typography>
+        <Typography variant="subtitle1">{user.result?.username}</Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           &nbsp;(Home)
         </Typography>

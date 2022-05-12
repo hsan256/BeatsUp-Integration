@@ -158,7 +158,7 @@ export default function CourseDetailsSummary({ cart, product, onAddCart, onGotoS
 
         <Divider sx={{ borderStyle: 'dashed' }} />
 
-        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 3 }}>
+        {/* <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 3 }}>
           <Typography variant="subtitle1" sx={{ mt: 0.5 }}>
             Color
           </Typography>
@@ -225,7 +225,7 @@ export default function CourseDetailsSummary({ cart, product, onAddCart, onGotoS
               Available: {available}
             </Typography>
           </div>
-        </Stack>
+        </Stack> */}
 
         <Divider sx={{ borderStyle: 'dashed' }} />
 
